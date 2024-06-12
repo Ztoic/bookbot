@@ -98,8 +98,6 @@ def character_counter(book):
             
     return alphabet
 
-
-
 def generate_report(book_path):
     book = open_book(book_path)
     words = word_counter(book)
@@ -111,11 +109,8 @@ def generate_report(book_path):
     for l in letter:
         char_num = letter[l]
         print(f"The {l} character was found {char_num} times")
-    
+        
     print("--- End Report ---")
 
 generate_report("./books/frankenstein.txt")
-
-
-
 
